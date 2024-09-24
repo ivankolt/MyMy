@@ -8,14 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
-            <TabItem Header="TabItem">
+            <TabItem Header="Я Первая вкладка">
                 <Grid Background="#FFE5E5E5">
                     <TextBox x:Name="Number" HorizontalAlignment="Left" Height="23" Margin="22,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
                     <TextBlock HorizontalAlignment="Left" Margin="22,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"><Run Text="Введите сторон"/><Run Text="у квадрата"/></TextBlock>
                     <Button Content="Решить" HorizontalAlignment="Left" Margin="22,93,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="22,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top">                        
-                          </TextBlock>
-                  
+                    <TextBlock HorizontalAlignment="Left" Margin="22,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+                    </TextBlock>
+
                     <TextBlock  HorizontalAlignment="Left" Margin="22,163,0,0" TextWrapping="Wrap" Text="S =" VerticalAlignment="Top"/>
                     <TextBlock x:Name ="S" HorizontalAlignment="Left" Margin="135,163,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="22,145,0,0" TextWrapping="Wrap" Text="P =" VerticalAlignment="Top"/>
@@ -29,8 +29,11 @@
                     <TextBlock  x:Name="Random2" HorizontalAlignment="Left" Margin="590,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem Header="Я вторая">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Я самый главный" HorizontalAlignment="Left" Margin="267,37,0,0" VerticalAlignment="Top" Width="223" Height="53" Click="Button_Click_2"/>
+                    <Image x:Name ="MyImage" HorizontalAlignment="Left" Height="291" Margin="34,90,0,0" VerticalAlignment="Top" Width="713"/>
+                </Grid>
             </TabItem>
         </TabControl>
 

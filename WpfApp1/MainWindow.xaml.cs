@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace WpfApp1
 {
@@ -45,5 +46,23 @@ namespace WpfApp1
             int Two = Number % 10;
             Random2.Text = Convert.ToString(Two);
         }
-    }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
+            openFileDialog.Title = "Select a Photo";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                MyImage.Source = new System.Windows.Media.Imaging.BitmapImage(new System.Uri(openFileDialog.FileName));
+             
+            }
+        }
+    
+
+}
+    
+
 }
